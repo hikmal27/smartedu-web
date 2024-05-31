@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Outfit, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const poppins = Poppins({
     weight: ['300', '400', '500', '600', '700'],
     style: ['normal', 'italic'],
     subsets: ['latin'],
     display: 'swap',
-  })
+})
+
+const outfit = Outfit({
+    weight: ['300', '400', '500', '600', '700'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={outfit.className}>
         <Navbar />
         {children}
         <Footer />

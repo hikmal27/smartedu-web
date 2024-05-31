@@ -6,8 +6,8 @@ const BaseLink = ({ href, label }: BaseLinkOPtions) => {
 
     return (
         <Link href={href ?? "/"}>
-            <div className="bg-[#FCD980] px-5 py-2 rounded-md">
-                <p className="text-center font-semibold">{label}</p>
+            <div className="bg-[#FCD980] px-10 py-2 rounded-md max-w-max">
+                <p className="text-center font-medium">{label}</p>
             </div>
         </Link>
     );

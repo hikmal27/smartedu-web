@@ -4,9 +4,9 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <>
-            <footer className="body-font bg-[#1C1E53]">
+            <footer className="body-font bg-[#0A874B]">
 
-                <div className="container text-white mt-12 rounded-lg ">
+                <div className="container text-white rounded-lg ">
                     <div className="flex flex-col text-center lg:text-left lg:items-start items-center px-9 py-12 lg:flex-row sm:px-20 sm:py-10 lg:px-20 lg:py-14 ">
                         <Link href={"/"} className="flex flex-1">
                             <Image src="/logo-smf-siluet.png" width={170} height={50} alt="logo" />
@@ -57,8 +57,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between px-10 py-5 text-black bg-white">
-                    <p><span className="text-xl font-semibold">&copy;</span><span className="text-sm"><i> Copyright 2024. All Right Riversed By Smart Multifinance</i></span></p>
+                <div className="px-10 py-5 text-black bg-white">
+                    <p className="text-center"><span className="text-xl font-semibold">&copy;</span><span className="text-sm"> Copyright 2024. All Right Riversed By Smart Multifinance</span></p>
                 </div>
                 {/* <div className="container px-10 py-8 mx-auto flex items-center sm:flex-row flex-col" >
                     <Link href={"/"} className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">

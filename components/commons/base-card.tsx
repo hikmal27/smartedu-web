@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Card, CardContent, CardFooter, CardHeader } from "../card";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { BaseCardOptions } from "@/lib/definitions";
-import BaseLink from "./BaseLink";
+import BaseLink from "./base-link";
 
 const BaseCard: React.FC<BaseCardOptions> = ({ title, description, path, width, children }) => {
     return (

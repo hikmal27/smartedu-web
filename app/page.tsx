@@ -1,15 +1,17 @@
-import AboutPage from "@/components/layout/About";
-import VideoCategoriesPage from "@/components/layout/VideoCategories";
-import CourseCategriesPage from "@/components/layout/CourseCategories";
+import About from "@/components/partials/about";
+import Benefit from "@/components/partials/benefit";
+import BlogSection from "@/components/partials/blog-section";
+import Hero from "@/components/partials/hero";
+import Recomendation from "@/components/partials/recomendation";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-        <AboutPage />
-        <div className="space-y-10">
-            <VideoCategoriesPage title="Video By Categories" />
-            <CourseCategriesPage title="Course By Categories" />
-        </div>
+        <Hero />
+        <Benefit />
+        <About />
+        <Recomendation />
+        <BlogSection />
     </main>
   );
 }
